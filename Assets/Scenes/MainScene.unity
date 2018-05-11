@@ -487,6 +487,11 @@ MonoBehaviour:
   - {fileID: 895679483}
   - {fileID: 1579910715}
   - {fileID: 2064820444}
+  lights:
+  - {fileID: 2061841168}
+  - {fileID: 329061773}
+  - {fileID: 884596845}
+  - {fileID: 953696468}
   shader2D: {fileID: 4800000, guid: 9c6ece3d5ef8bb84db19471daaf6c788, type: 3}
   shader3D: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
   shaderMap: {fileID: 2800000, guid: d245f9671bf6842d48d1a304086ee00d, type: 3}
@@ -859,6 +864,10 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 20a7277d513d5bf49bb2cd225e995788, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &329061773 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 196526, guid: 8e44ff1cdba9f3643bf2345818cfa9d6, type: 2}
+  m_PrefabInternal: {fileID: 943395285}
 --- !u!4 &364324862 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 9bdab8172d194894887e92435754ff6f, type: 2}
@@ -1669,6 +1678,10 @@ GameObject:
 GameObject:
   m_PrefabParentObject: {fileID: 100000, guid: bc9388e3ca22105409037bbbaa1aca34, type: 2}
   m_PrefabInternal: {fileID: 1132616268}
+--- !u!1 &884596845 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 196526, guid: 8e44ff1cdba9f3643bf2345818cfa9d6, type: 2}
+  m_PrefabInternal: {fileID: 228904717}
 --- !u!1 &895165078 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100000, guid: bc9388e3ca22105409037bbbaa1aca34, type: 2}
@@ -1731,6 +1744,10 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 9bdab8172d194894887e92435754ff6f, type: 2}
   m_PrefabInternal: {fileID: 1922593846}
+--- !u!1 &953696468 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 196526, guid: 8e44ff1cdba9f3643bf2345818cfa9d6, type: 2}
+  m_PrefabInternal: {fileID: 630486741}
 --- !u!1001 &976135303
 Prefab:
   m_ObjectHideFlags: 0
