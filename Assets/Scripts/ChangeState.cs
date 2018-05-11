@@ -7,7 +7,7 @@ public class ChangeState : MonoBehaviour {
 	Animator anim;
 
 	int trigger = Animator.StringToHash ("3D");
-	int triDHash = Animator.StringToHash("Base Layer.3D"); 
+	int triDHaash = Animator.StringToHash("Base Layer.3D"); 
 	int dubsDHash = Animator.StringToHash("Base Layer.2D");
 
 	// Use this for initialization
@@ -26,7 +26,7 @@ public class ChangeState : MonoBehaviour {
 			print ("2D");
 		}
 
-		if (Input.GetKeyDown (KeyCode.Space))
+		if (Input.GetKeyDown (KeyCode.J))
 		{
 			if(anim.GetBool(trigger)){
 				anim.SetBool(trigger, false);
