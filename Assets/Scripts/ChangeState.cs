@@ -9,8 +9,6 @@ public class ChangeState : MonoBehaviour {
 	public GameObject messageTarget;
 
 	int trigger = Animator.StringToHash ("3D");
-	int triDHash = Animator.StringToHash("Base Layer.3D"); 
-	int dubsDHash = Animator.StringToHash("Base Layer.2D");
 
 	// Use this for initialization
 	void Start () {
@@ -20,8 +18,6 @@ public class ChangeState : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-		AnimatorStateInfo stateInfo = anim.GetCurrentAnimatorStateInfo (0);
-		
 		//if (stateInfo.IsName ("3D")) {
 		//	//print ("3D");
 		//} else {
