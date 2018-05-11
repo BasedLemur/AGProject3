@@ -6,6 +6,7 @@ public class TransitionShaders : MonoBehaviour, ITransitionMessageTarget
 {
 
 	public GameObject[] renderables;
+	public GameObject[] lights;
 	public Shader shader2D;
 	public Shader shader3D;
 	public Texture shaderMap;
@@ -23,15 +24,6 @@ public class TransitionShaders : MonoBehaviour, ITransitionMessageTarget
 			foreach (Material mat in mats)
 			{
 				mat.shader = shader2D;
-				//mat.EnableKeyword("_DetailTex");
-				//mat.EnableKeyword("_MainTex");
-				//mat.EnableKeyword("_ToonShade");
-				//mat.EnableKeyword("_TintColor");
-				//mat.EnableKeyword("_Color");
-				//mat.EnableKeyword("_VertexColor");
-				//mat.EnableKeyword("_Brightness");
-				//mat.EnableKeyword("_OutlineColor");
-				//mat.EnableKeyword("_Outline");
 				mat.EnableKeyword("_Color");
 				mat.EnableKeyword("_MainTex");
 				mat.EnableKeyword("_BumpMap");
@@ -85,6 +77,10 @@ public class TransitionShaders : MonoBehaviour, ITransitionMessageTarget
 					mat.SetFloat("_LightThreshold", 0.01f);
 				}
 			}
+			foreach (GameObject light in lights)
+			{
+				light.GetComponent<Light>().shadows = LightShadows.Hard;
+			}
 		}
 		else
 		{
@@ -96,6 +92,10 @@ public class TransitionShaders : MonoBehaviour, ITransitionMessageTarget
 				{
 					mat.shader = shader3D;
 				}
+			}
+			foreach(GameObject go in lights)
+			{
+				go.GetComponent<Light>().shadows = LightShadows.Soft;
 			}
 		}
 	}
